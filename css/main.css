@@ -69,6 +69,33 @@ h2 {
 }
 
 /*******************************
+FADE IN TRANSITION
+********************************/
+
+.fade {
+  opacity:0.7;
+  transition: opacity 2s ease;
+}
+
+.fade:hover {
+  opacity:1;
+}
+
+/*******************************
+ROTATE TRANSITION
+********************************/
+.rotate {
+  display: inline-block;
+}
+
+.rotate:hover {
+  cursor: none;
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+/*******************************
 ROLLING TEXT KEYFRAME
 ********************************/
 
@@ -83,15 +110,15 @@ ROLLING TEXT KEYFRAME
   font-weight: bold;
 }
 
-.text-scroll {
+.scrolling_words {
   overflow: hidden;
-  /*position: relative;
-  height: 50px;
-  float: left;*/
 }
 
 .text_scroll {
   max-height: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 50px;
 }
 
 .scrolling_words {
@@ -105,7 +132,7 @@ ROLLING TEXT KEYFRAME
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-  height: 50px;
+  max-height: 50px;
   font-size: 55px;
   letter-spacing: 2px;
 }
@@ -120,32 +147,26 @@ ROLLING TEXT KEYFRAME
   80% { top: -0px;}
 }
 
-@-moz-keyframes move {
-  0%  { top: 0px; }
-  20% { top: -70px; }
-  40% { top: -100px; }
-  60% { top: -150px; }
-  60% { top: -150px; }
-  80% { top: -0px;}
-  80% { top: -0px;}
+/*******************************
+GROW TRANSITION
+********************************/
+
+.octocat {
+  clear: both;
 }
 
-@-o-keyframes move {
-  0%  { top: 0px; }
-  20% { top: -70px; }
-  40% { top: -100px; }
-  60% { top: -150px; }
-  60% { top: -150px; }
-  80% { top: -0px;}
-  80% { top: -0px;}
+.octocat img {
+  height: 50px;
 }
 
-@keyframes move {
-  0%  { top: 0px; }
-  20% { top: -70px; }
-  40% { top: -100px; }
-  60% { top: -150px; }
-  60% { top: -150px; }
-  80% { top: -0px;}
-  80% { top: -0px;}
+.octocat {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
