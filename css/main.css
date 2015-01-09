@@ -129,6 +129,7 @@ ROLLING TEXT KEYFRAME
   font-size: 55px;
   color: #2F2933;
   font-weight: bold;
+  margin-top: 75px;
 }
 
 .text_scroll {
@@ -149,7 +150,7 @@ ROLLING TEXT KEYFRAME
 
 .scrolling_words  p {
   font-family: 'Gruppo', cursive;
-  margin: 0 0 22px;
+  margin: 0 0 26px;
   color: #2F2933;
   position: relative;
   white-space: nowrap;
@@ -157,17 +158,16 @@ ROLLING TEXT KEYFRAME
   -moz-animation: move 8s 1s infinite;
   -o-animation: move 8s 1s infinite;
   animation: move 8s 1s infinite;
-  max-height: 50px;
   font-size: 50px;
   letter-spacing: 2px;
 }
 
 @-webkit-keyframes move {
   0%  { top:  0px; }
-  20% { top: -48px; }
-  40% { top: -108px; }
-  60% { top: -168px; }
-  60% { top: -145px; }
+  20% { top: -45px; }
+  40% { top: -90px; }
+  60% { top: -175px; }
+  60% { top: -140px; }
   80% { top: -0px; }
   80% { top: -0px; }
 }
@@ -188,7 +188,7 @@ GROW TRANSITION
   width: 50px;
   display: block;
   margin: 175px 0 0 375px;
-  padding-top: 40px;
+  padding-top: 33px;
 }
 
 .grow:hover {
