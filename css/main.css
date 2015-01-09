@@ -69,6 +69,27 @@ h2 {
 }
 
 /*******************************
+FADE IN KEYFRAME
+********************************/
+
+.card {
+  opacity: 0;
+    -webkit-animation: fade-in 3s ease-in 1;
+    -moz-animation: fade-in 3s ease-in 1;
+    -o-animation: fade-in 3s ease-in 1;
+    animation: fade-in 3s ease-in 1;
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card {
+  opacity: 1;
+}
+
+/*******************************
 FADE IN TRANSITION
 ********************************/
 
@@ -90,9 +111,9 @@ ROTATE TRANSITION
 
 .rotate:hover {
   cursor: none;
-  -webkit-transform: rotateZ(-30deg);
-  -ms-transform: rotateZ(-30deg);
-  transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
 }
 
 /*******************************
@@ -163,6 +184,7 @@ GROW TRANSITION
   width: 50px;
   display: block;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .grow:hover {
