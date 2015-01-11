@@ -111,7 +111,7 @@ ROTATE TRANSITION
 
 .rotate:hover {
   cursor: none;
-    -webkit-transform: rotateZ(-30deg);
+    -webkit-animation: rotateZ(-30deg);
     -ms-transform: rotateZ(-30deg);
     transform: rotateZ(-30deg);
 }
@@ -195,4 +195,5 @@ GROW TRANSITION
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
+  transition-duration: 1s;
 }
