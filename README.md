@@ -3,8 +3,8 @@ The Iron Yard Academy (Charleston, SC) Front End Engineering Day 4 Profile Card 
 
 Basic profile card using the following CSS animations or transitions:
 
-FADE IN KEYFRAME
-FADE IN TRANSITION
-ROTATE TRANSITION
-ROLLING TEXT KEYFRAME
-GROW TRANSITION
+<p>FADE IN KEYFRAME</p>
+<p>FADE IN TRANSITION</p>
+<p>ROTATE TRANSITION</p>
+<p>ROLLING TEXT KEYFRAME</p>
+<p>GROW TRANSITION</p>
